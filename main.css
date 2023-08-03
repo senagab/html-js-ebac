@@ -41,8 +41,19 @@ button:hover {
     background-color: #27ae60;
 }
 
-.sucess-message {
+.success-message {
     background-color: #27ae60;
     padding: 16px;
     color: #fff;
+    display: none;
+}
+
+.error-message {
+    font-size: 12px;
+    background-color: #ae2727;
+    padding: 10px;
+    color: #fff;
+    display: none;
+    margin-bottom: 8px;
+    display: none;
 }
