@@ -46,3 +46,18 @@ form.addEventListener('submit', function(evento){
     }
 })
 
+nomeBeneficiario.addEventListener('keyup', function(evento) {
+    console.log(evento.target.value);
+    // retorna o nome escrito (valor atualizado do campo de texto)
+
+    formValido = validaNome(evento.target.value);
+    
+    // se o form nao for valido então
+    if (!formValido) {
+        nomeBeneficiario.style.border = "1px solid red";
+        document.querySelector('.error-message').style.display = 'block';
+    } else {
+        nomeBeneficiario.style = '';
+        document.querySelector('.error-message').style.display = 'none';
+    }
+});
